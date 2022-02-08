@@ -1,0 +1,236 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+    src: url('Bebas_Neue/BebasNeue-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Android';
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+    src: url('pacote-projeto-d010/fontes/idroid.otf') format('opentype');
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+:root {
+    /* Variáveis de Fontes */
+    --fonte-destaque: 'Bebas Neue', cursive;
+    --fonte-android: 'Android';
+    --fonte-do-texto: Arial, Helvetica, sans-serif;
+
+    /* Variáveis de Cores */
+    --cor0: #83E1AD;
+    --cor1: #3DDC84;
+    --cor2: #3DDB84;
+    --cor3: #2FA866;
+    --cor4: #355C47;
+    --cor5: #ebe5c5;
+}
+
+body {
+    background-color: var(--cor5);
+}
+
+header {
+    background-color: darkgreen;
+    background-image: linear-gradient(to bottom, var(--cor2), var(--cor3), var(--cor4));
+    height: 150px;
+}
+
+header > h1 {
+    font-family: var(--fonte-destaque);
+    font-weight: normal;
+    font-size: 40px;
+    color: white;
+    text-align: center;
+}
+
+header > p#subtitulo {
+    font-family: var(--fonte-do-texto);
+    color: white;
+    text-align: center;
+}
+
+nav {
+    background-color: var(--cor4);
+    padding-bottom: 10px;
+}
+
+nav > a {
+    font-family: var(--fonte-do-texto);
+    font-weight: bold;
+    color: var(--cor2);
+    text-decoration: none;
+    padding: 10px;
+}
+
+nav > a:hover {
+    background-color: var(--cor3);
+    border-radius: 5px;
+    transition-duration: 0.5s;
+}
+
+main {
+    background-color: white;
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+    box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.445);
+    border-radius: 0px 0px 5px 5px;
+}
+
+article > h1 {
+    font-family: var(--fonte-android);
+    color: rgb(3, 109, 3);
+}
+
+article > h2 {
+    background-image: linear-gradient(to right, var(--cor1), transparent);
+    color: rgb(0, 48, 0);
+    font-family: var(--fonte-android);
+    text-indent: 10px;
+}
+
+article > p.texto {
+    font-family: var(--fonte-do-texto);
+    text-indent: 30px;
+    text-align: justify;
+    line-height: 1.5em;
+}
+
+picture#robos > img {
+    width: 100%;
+}
+
+picture#irina {
+    margin: auto;
+}
+
+picture#irina > img {
+    width: 100%;
+}
+
+p.texto > span {
+    color: green;
+    font-weight: bold;
+    padding: 2px;
+    border-radius: 5px;
+}
+
+p.texto > a {
+    background-color: rgb(10, 241, 10);
+    color: rgb(0, 48, 0);
+    font-weight: bold;
+    text-decoration: none;
+    padding: 2px;
+    border-radius: 3px;
+}
+
+p.texto > a::after {
+    content: '✋';
+}
+
+p.texto > a:hover {
+    text-decoration: underline;
+}
+
+img#bugdroid {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+section {
+    display: block;
+    background-color: darkgreen;
+    min-width: 320px;
+    max-width: 850px;
+    height: 360px;
+    margin-right: -25px;
+    margin-left: -25px;
+}
+
+section > iframe {
+    display: block;
+    padding: 20px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+aside {
+    background-color: lightgreen;
+    margin: 20px;
+    border-radius: 6px;
+    box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.445);
+}
+
+aside > h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: bolder;
+    font-size: 25px;
+    text-indent: 16px;
+    background-color: green;
+    color: white;
+    border-radius: 6px 6px 0px 0px;
+}
+
+aside > p.infoad {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 16px;
+    text-indent: 16px;
+    text-align: justify;
+    background-color: lightgreen;
+    padding: 0px 15px;
+    line-height: 1.5;
+}
+
+p.infoad > a {
+    color: darkgreen;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+p.infoad > a:hover {
+    text-decoration: underline;
+}
+
+p.infoad > a::after {
+    content: '✋';
+}
+
+p.infoad > span {
+    color: darkgreen;
+    font-weight: bold;
+}
+
+aside > ul {
+    list-style-position: inside;
+    list-style-type: '\2714\00A0';
+    columns: 2;
+}
+
+footer {
+    background-color: darkgreen;
+    margin: 20px 0px -16px 0px;
+}
+
+footer > p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-size: 14px;
+    font-weight: normal;
+    text-align: center;
+    color: white;
+}

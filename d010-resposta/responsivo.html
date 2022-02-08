@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de Responsividade</title>
+    <style>
+        :root {
+            --fonte-do-site: Arial, Helvetica, sans-serif;
+        }
+        
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body {
+            background-color: gray;
+        }
+
+        main > h1 {
+            font-family: var(--fonte-do-site);
+            text-align: center;
+        }
+
+        picture > img {
+            width: 100%;
+        }
+
+        main > p {
+            font-family: var(--fonte-do-site);
+            text-align: justify;
+        }
+
+        main {
+            min-width: 280px;
+            max-width: 800px;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Testando Responsividade</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis sint exercitationem rerum a ad dolore. Sunt magni distinctio asperiores odio sint accusantium cum, quia, sit commodi reprehenderit, adipisci doloremque modi!</p>
+        <picture>
+            <source media="(min-width: 600px)" srcset="pacote-projeto-d010/imagens/irina-blok.jpg" type="image/jpg">
+            <img src="pacote-projeto-d010/imagens/irina-blok-pq.jpg" alt="Irina-blok">
+        </picture>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat dolorum adipisci totam, ut quos illo expedita ex vel, doloribus dolor consectetur fugiat, qui cum dolorem nam odit excepturi? Itaque, nihil.</p>
+    </main>
+</body>
+</html>
